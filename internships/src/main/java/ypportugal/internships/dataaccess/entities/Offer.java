@@ -4,13 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="offer")
+@Table(name = "offer")
 public class Offer {
 
 	private String name;
-	
+
 	public Offer() {
-		//Empty
+		// Empty
 	}
 
 	public String getName() {
@@ -20,7 +20,5 @@ public class Offer {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
-	
+
 }
