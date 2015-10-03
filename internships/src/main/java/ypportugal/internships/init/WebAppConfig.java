@@ -1,4 +1,5 @@
-import java.util.Properties;
+package ypportugal.internships.init;
+
 import java.util.Properties;
 
 import javax.annotation.Resource;
