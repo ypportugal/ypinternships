@@ -5,14 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Home page</title>
+<title>List of offers</title>
 </head>
 <body>
-<h1>Home page</h1>
+<h1>List of offers</h1>
 <p>
-${message}<br/>
-<a href="${pageContext.request.contextPath}/team/add.html">Add new team</a><br/>
-<a href="${pageContext.request.contextPath}/team/list.html">Team list</a><br/>
-</p>
+<table border="1px" cellpadding="0" cellspacing="0" >
+<tbody>
+<c:forEach var="offer" items="${offers}">
+<tr>
+	<td>${offer.name}</td>
+</tr>
+</c:forEach>
+</tbody>
+</table>
 </body>
 </html>

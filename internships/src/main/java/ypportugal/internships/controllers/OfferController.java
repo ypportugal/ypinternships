@@ -17,7 +17,7 @@ public class OfferController {
 		List<Offer> offers = new ArrayList<Offer>();
 		offers.add(new Offer());
 		ModelAndView view = new ModelAndView("home");
-		view.addObject("list",offers);
+		view.addObject("offers",offers);
 		return view;
 	}
 	
