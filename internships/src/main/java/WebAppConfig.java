@@ -18,7 +18,7 @@ import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
 @Configuration
-@ComponentScan("com.sprhib")
+@ComponentScan("ypportugal.internships")
 @EnableWebMvc
 @EnableTransactionManagement
 @PropertySource("classpath:application.properties")
