@@ -14,25 +14,24 @@
 <p></p>
 <table border="1px" cellpadding="0" cellspacing="0" >
 <thead>
-<th>Id</th>
 <th>Nome da oferta</th>
 <th>Sinopse</th>
-<th>Data de candidatura</th>
+<th>Data limite de candidatura</th>
 <th></th>
 </thead>
 <tbody>
 <c:forEach var="offer" items="${offers}">
 <tr>
-	<td>${offer.offerId}</td>
 	<td>${offer.offerTitle}</td>
 	<td>${offer.offerSynopsis}</td>
 	<td>${offer.offerExpireDate}</td>
 	<td>
-		<a href="${pageContext.request.contextPath}/detail/${offer.offerId}.html">Ver detalhe</a> 
+		<a href="${pageContext.request.contextPath}/offer/detail/${offer.offerId}.html">Ver detalhe</a> 
 	</td>
 </tr>
 </c:forEach>
 </tbody>
 </table>
+<a href="${pageContext.request.contextPath}/offer/create.html">Criar nova oferta</a>
 </body>
 </html>

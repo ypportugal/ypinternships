@@ -1,4 +1,4 @@
-package ypportugal.internships.dataaccess.entities;
+package ypportugal.internships.entities;
 
 import java.util.Date;
 
